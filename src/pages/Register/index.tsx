@@ -58,7 +58,7 @@ function Register() {
             <Input name="email" placeholder="E-mail" />
             <Input name="password" type="password" placeholder="Password" />
             <Input name="confirmPassword" type="password" placeholder="Confirm Password" />
-            <Button type="submit" loading={isLoading} color="primary">Login</Button>
+            <Button type="submit" loading={isLoading} color="primary">Register</Button>
           </form>
         )}
       </Formik>
