@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const StyledLink = styled(Link)`
   font-weight: 400;
-  color: ${({ theme }) => theme.primary};  /* #03a9f4 */ 
+  color: ${({ theme }) => theme.primary};
   text-decoration: none;
   margin: 4px 2px;
   display: inline-block;

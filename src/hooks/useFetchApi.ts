@@ -18,7 +18,6 @@ function fetchApiReducer<T>(state: FetchApiState<T>, action: FetchApiAction<T>) 
         ...state,
         isLoading: true,
         isError: false,
-        // data: undefined,
       };
 
     case 'FETCH_SUCCESS':
@@ -55,20 +54,7 @@ function useFetchApi<DataResquest, DataResponse>(
       data: undefined,
     },
   );
-    /*
-  async function setFetch(dataRequest: DataResquest) {
-    try {
-      dispatch({ type: 'FETCH_REQUEST' });
-      const data = await request(dataRequest);
 
-      dispatch({ type: 'FETCH_SUCCESS', payload: data });
-
-      return data;
-    } catch ({ response }) {
-      dispatch({ type: 'FETCH_FAILURE', payload: response?.data });
-      return undefined;
-    }
-  } */
   const setFetch = useCallback(async (dataRequest: DataResquest) => {
     try {
       dispatch({ type: 'FETCH_REQUEST' });

@@ -11,5 +11,4 @@ export const Container = styled.div`
 export const LoginCard = styled(Card)`
   width: 95%;
   max-width: 460px;
-  /* min-height: 350px; */
 `;

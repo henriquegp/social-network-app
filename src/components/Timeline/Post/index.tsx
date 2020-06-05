@@ -12,6 +12,8 @@ import {
   Container, Header, LinkName, Actions, ButtonIcon, ButtonLink,
 } from './styles';
 
+const { REACT_APP_API_URL } = process.env;
+
 function formatDate(date: string) {
   const options = {
     year: 'numeric',
@@ -52,7 +54,7 @@ function Post({ data }: Props) {
       </Header>
 
       { text && <p>{ text }</p> }
-      { file && <img src={`http://localhost:5000/files/${file}`} alt="post" /> }
+      { file && <img src={`${REACT_APP_API_URL}/files/${file}`} alt="post" /> }
 
       <Actions>
         <div>

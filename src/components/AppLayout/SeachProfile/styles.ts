@@ -29,7 +29,7 @@ export const StyledInput = styled.div`
 
   input {
     width: 85%;
-    background: ${({ theme }) => theme.searchColors.input}; /* #c9c9ce */
+    background: ${({ theme }) => theme.searchColors.input};
     font-size: 1.4rem;
     padding: 6px 15px;
     outline: none;

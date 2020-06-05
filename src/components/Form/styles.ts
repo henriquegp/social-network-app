@@ -6,7 +6,6 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   width: 100%;
-  /* height: 73px; */
   margin-bottom: 2px; 
 
   input, textarea {

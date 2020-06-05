@@ -73,7 +73,7 @@ export const ButtonIcon = styled.button<ButtonIconProps>`
   background: transparent;
   margin: 0 8px;
   cursor: pointer;
-  color: ${({ theme, actived }) => (actived ? theme.primary : 'inherit')}; /* #65676b */
+  color: ${({ theme, actived }) => (actived ? theme.primary : 'inherit')};
   transition: color .3s;
 
   :hover {
